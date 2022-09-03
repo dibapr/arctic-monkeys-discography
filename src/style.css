@@ -1,0 +1,311 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+.btnUp {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+
+.heading {
+    padding: 0 2em;
+}
+
+.heading h1 {
+    font-size: 5em;;
+}
+
+.heading p {
+    font-style: italic;
+}
+
+nav {
+    background-color: #A27B5C;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > a > img {
+    max-width: 80px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+
+nav > ul > a > li:hover {
+    color: white;
+}
+
+nav > ul > a {
+    text-decoration: none;
+}
+
+nav > ul > a > li {
+    text-decoration: none;
+    color: #DCD7C9;
+    font-weight: 600;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.line {
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 0.5em;
+}
+
+.bg-head {
+    background: url("../assets/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #DCD7C9;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content {
+    font-weight: 300;
+    color: #2C3639;
+}
+
+.tentang {
+    padding: 15vh 0;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.sejarah {
+    padding: 15vh 0;
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+}
+
+.sejarah > img {
+    max-width: 55%;
+    float: left;
+    margin-right: 2em;
+}
+
+.sejarah-text > h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+}
+
+.sejarah-text > p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+.disko {
+    background-image: url("../assets/main2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #3F4E4F;
+    width: 100% !important;
+    color: #DCD7C9;
+    padding: 15vh 0;
+}
+
+.disko > h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 1em
+}
+
+.disko-wrapper {
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7em;
+    justify-items: center;
+}
+
+.card {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.7em;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.details, .btn-track {
+    justify-self: flex-end;
+}
+
+.btn-track {
+    background-color: #2C3639;
+    padding: 0.5em 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.btn-track:hover {
+    background-color: #393c3d;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 8em;
+}
+
+table {
+    border-collapse: collapse;
+    font-weight: bolder;
+}
+
+tr:nth-child(odd) {
+    background-color: #2C3639;
+}
+
+tr:nth-child(even) {
+    background-color: #DCD7C9;
+    color: #2C3639;
+}
+
+table tr td {
+    padding: 0.2em;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #DCD7C9;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #DCD7C9;
+}
+
+.tracks {
+    display: block;
+}
+
+.tracks-close {
+    display: none;
+}
+
+.newsletter {
+    width: 75%;
+    margin: auto;
+    padding: 15vh 0;
+    font-size: 1.2rem;
+}
+
+.newsletter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    width: 75%;
+    margin: auto;
+}
+
+
+
+.newsletter-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.inputForm {
+    padding: 0.5em 1em;
+    outline: none;
+}
+
+#btnSubmit {
+    padding: 1em 1em;
+    outline: none;
+    border: none;
+    background-color: #2C3639;
+    color: #DCD7C9;
+    font-weight: 800;
+}
+
+#btnSubmit:hover {
+    cursor: pointer;
+    background-color: #3F4E4F;
+}
+
+#textSuccess {
+    font-size: 0.8rem !important;
+}
+
+.biodata {
+    background-color: #2C3639;
+    padding: 15vh 0;
+    margin: auto;
+    color: #DCD7C9;
+}
+
+.biodata-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.gambar {
+    width: 20%;
+}
+
+.gambar >  img {
+    width: 80%;
+}
+
+.data > ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #A27B5C;
+    padding: 1em;
+    text-align: center;
+}

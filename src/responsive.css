@@ -1,0 +1,78 @@
+@media screen and (max-width: 1024px) {
+    .sejarah > img {
+        float: none;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+
+    .disko-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .disko-wrapper {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+    
+    nav > ul {
+        position: absolute;
+        right: 0%;
+        top: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #A27B5C;
+        width: 100vw;
+        height: 65vh;
+        z-index: -1;
+        transform: translateY(-100%);
+        transition-duration: 0.3s;
+        gap: 0;
+    }
+
+    .nav-active {
+        transform: translateY(0);
+    }
+
+    nav > ul > a {
+        margin-top: 85px;
+    }
+
+    .newsletter-wrapper {
+        flex-direction: column;;
+    }
+
+    .newsletter-text {
+        text-align: center;
+    }
+    
+    .gambar {
+        width: 50%;
+        margin-bottom: 1em;
+    }
+
+    .biodata-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+}
+
+@media screen and (min-width: 375px) {
+    
+}
